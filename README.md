@@ -36,25 +36,37 @@
 - Excel報表匯出 (含設備資訊與出借紀錄)
 
 ## 相關程式畫面
-### 登入註冊<br>
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/7.png">
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/8.png">
+### 模擬登入(實際轉為復盛公司SSO登入)<br>
+<img src="https://github.com/lfre84216/DeviceManageSystem-FuSheng-/blob/main/1.png">
 <br>
 
-### 使用者介面<br>
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/1.png">
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/2.png">
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/3.png">
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/4.png">
+### 設備出借<br>
+<img src="https://github.com/lfre84216/DeviceManageSystem-FuSheng-/blob/main/2.png">
 <br>
 
-### 管理者介面<br>
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/5.png">
-<img src="https://github.com/lfre84216/BookBorrowSystem/blob/main/6.png">
+### 設備歸還<br>
+<img src="https://github.com/lfre84216/DeviceManageSystem-FuSheng-/blob/main/3.png">
+<br>
+
+### 設備管理<br>
+<img src="https://github.com/lfre84216/DeviceManageSystem-FuSheng-/blob/main/4.png">
+<br>
+
+### 設備管理修改<br>
+<img src="https://github.com/lfre84216/DeviceManageSystem-FuSheng-/blob/main/5.png">
+<br>
+
+### 出借記錄<br>
+<img src="https://github.com/lfre84216/DeviceManageSystem-FuSheng-/blob/main/6.png">
 <br>
 
 ## 製作過程與困難點
-在實作該專案的過程中，有嘗試想要實際讓資料庫可以被外部來連接，<br>
-達成實際直接遠端資料庫的功能，<br>
-所以在網路這方面有另外研究了關於虛擬伺服器的功能，<br>
-讓實作出來的程式也能透過外部裝置來進行連線。
+當時在串接SSO Login的時候，不太了解實作原理，<br>
+主要是先判斷未獲得Session值時，<br>
+先連入公司的Login View URL(該URL後方會加入身分驗證成功後導向的特定網址參數，對應該專案特定的Action)，<br>
+所以登入公司帳號後，即可導向回原設備管理系統的Action，<br>
+同時帶入回傳的JSON資料，取得Session值。<br><br>
+另外，在復盛公司進行實作專案，<br>
+是我第一次加入公司進行實習，<br>
+在這邊特別感謝復盛IT的Richie詳細的教我程式撰寫方面的問題，<br>
+以及復盛IT的Rexx帶領我熟悉公司環境。<br>
