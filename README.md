@@ -16,8 +16,9 @@
 - HTML+CSS
 - Boostarp CSS UI Framework
 - JavaScript+jQuery
-- AJAX
-- JSON
+- SQL Server
+- Entity Framework
+- JSON+AJAX
 - Card Reader
 
 ## 主要實作功能
